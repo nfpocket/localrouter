@@ -1,0 +1,50 @@
+providers:
+  openai:
+    type: openai-compatible
+    baseUrl: https://api.openai.com/v1
+    apiKey: ${OPENAI_API_KEY}
+    models:
+      - gpt-4o
+      - gpt-4o-mini
+      - o1
+      - o1-mini
+
+  anthropic:
+    type: anthropic
+    apiKey: ${ANTHROPIC_API_KEY}
+    models:
+      - claude-opus-4-8
+      - claude-sonnet-4-6
+      - claude-haiku-4-5
+
+  google:
+    type: google
+    apiKey: ${GOOGLE_API_KEY}
+    models:
+      - gemini-2.5-pro
+      - gemini-2.0-flash
+
+  mistral:
+    type: openai-compatible
+    baseUrl: https://api.mistral.ai/v1
+    apiKey: ${MISTRAL_API_KEY}
+    models:
+      - mistral-large-latest
+      - mistral-small-latest
+      - codestral-latest
+
+  lmstudio:
+    type: openai-compatible
+    # host.docker.internal reaches your Mac's localhost from inside Docker
+    baseUrl: http://host.docker.internal:1234/v1
+    discover: true
+
+  ollama:
+    type: openai-compatible
+    baseUrl: http://ollama:11434/v1
+    discover: true
+
+aliases:
+  fast: openai/gpt-4o-mini
+  smart: anthropic/claude-sonnet-4-6
+  local: lmstudio/llama-3.2-3b

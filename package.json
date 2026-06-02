@@ -1,0 +1,39 @@
+{
+  "name": "localrouter",
+  "version": "0.1.0",
+  "description": "Self-hosted LLM gateway — one OpenAI-compatible endpoint for all your providers, cloud and local",
+  "bin": {
+    "localrouter": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "examples",
+    "config.example.yaml"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "tsx watch src/cli.ts start",
+    "start": "node dist/cli.js start",
+    "build": "rm -rf dist && tsc",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@ai-sdk/google": "^1.0.0",
+    "@anthropic-ai/sdk": "^0.52.0",
+    "ai": "^4.0.0",
+    "commander": "^15.0.0",
+    "dotenv": "^17.4.2",
+    "express": "^4.21.0",
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}

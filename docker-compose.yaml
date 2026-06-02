@@ -1,0 +1,24 @@
+services:
+  localrouter:
+    build: .
+    ports:
+      - "${PORT:-3000}:3000"
+    volumes:
+      - ./config.yaml:/app/config.yaml:ro
+    environment:
+      CONFIG_PATH: /app/config.yaml
+    env_file: .env
+    restart: unless-stopped
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  # Uncomment to run Ollama alongside the gateway
+  # ollama:
+  #   image: ollama/ollama
+  #   ports:
+  #     - "11434:11434"
+  #   volumes:
+  #     - ollama_data:/root/.ollama
+
+# volumes:
+#   ollama_data:
