@@ -1,5 +1,5 @@
 {
-  "name": "localrouter",
+  "name": "localrouter-ai",
   "version": "0.1.0",
   "description": "Self-hosted LLM gateway — one OpenAI-compatible endpoint for all your providers, cloud and local",
   "license": "MIT",

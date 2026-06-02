@@ -14,7 +14,7 @@ your app  →  localrouter  →  OpenAI
 ## Quickstart (60 seconds)
 
 ```bash
-npm install -g localrouter     # or use npx localrouter <command>
+npm install -g localrouter-ai     # or use npx localrouter-ai <command>
 
 localrouter init               # creates ~/.localrouter/{config.yaml,.env} + gateway key
 localrouter config             # add your provider API keys in your editor
