@@ -2,6 +2,20 @@
   "name": "localrouter",
   "version": "0.1.0",
   "description": "Self-hosted LLM gateway — one OpenAI-compatible endpoint for all your providers, cloud and local",
+  "license": "MIT",
+  "author": "Norman Feiss <norman.feiss@nyo.de>",
+  "keywords": [
+    "llm",
+    "gateway",
+    "openai",
+    "anthropic",
+    "ollama",
+    "lmstudio",
+    "openrouter",
+    "ai",
+    "proxy",
+    "self-hosted"
+  ],
   "bin": {
     "localrouter": "./dist/cli.js"
   },
