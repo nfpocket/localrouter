@@ -17,7 +17,7 @@
     "self-hosted"
   ],
   "bin": {
-    "localrouter": "./dist/cli.js"
+    "localrouter": "dist/cli.js"
   },
   "files": [
     "dist",
