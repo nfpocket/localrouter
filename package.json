@@ -4,6 +4,14 @@
   "description": "Self-hosted LLM gateway — one OpenAI-compatible endpoint for all your providers, cloud and local",
   "license": "MIT",
   "author": "Norman Feiss <norman.feiss@nyo.de>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nfpocket/localrouter-ai.git"
+  },
+  "homepage": "https://github.com/nfpocket/localrouter-ai#readme",
+  "bugs": {
+    "url": "https://github.com/nfpocket/localrouter-ai/issues"
+  },
   "keywords": [
     "llm",
     "gateway",
